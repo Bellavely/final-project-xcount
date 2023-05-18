@@ -33,7 +33,6 @@ export default function TabNavigation() {
     setUser(username);
   };
 
-  //console.log(user)
   useEffect(() => {
     findUser();
     findGreet();
@@ -157,11 +156,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     display:'flex',
     padding: 0,
-    // left: 16,
-    // right: 16,
-    // bottom: 32,
     height: 56,
-    // borderRadius: 16,
     backgroundColor: COLORS.white,
     borderTopColor: 'transparent',
     shadowColor: COLORS.dark,
@@ -171,7 +166,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.1,
     shadowRadius: 3,
-    // elevation: 3,
   },
   Text:{
     textAlign:'center',

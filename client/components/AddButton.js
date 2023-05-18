@@ -159,7 +159,6 @@ const styles = StyleSheet.create({
     elevation: 6,
     alignItems: "center",
     justifyContent: "center",
-    // backgroundColor: 'transparent',
     backgroundColor: COLORS.primary,
     marginBottom: 10,
     width: 60,

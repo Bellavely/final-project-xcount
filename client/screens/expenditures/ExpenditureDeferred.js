@@ -12,26 +12,7 @@ const timeToString = (time) => {
 };
 const ExpenditureDeferred = ({ navigation, props }) => {
   const [items, setItems] = useState({});
-  // const [currentMonth, setCurrentMonth] = useState("");
 
-  // const setMonth = (date) => {
-  //   const month = date - 1;
-  //   const monthNames = [
-  //     "January",
-  //     "February",
-  //     "March",
-  //     "April",
-  //     "May",
-  //     "June",
-  //     "July",
-  //     "August",
-  //     "September",
-  //     "October",
-  //     "November",
-  //     "December",
-  //   ];
-  //   setCurrentMonth(monthNames[month]);
-  // };
 
   const loadItems = (day) => {
     setTimeout(() => {
@@ -44,7 +25,6 @@ const ExpenditureDeferred = ({ navigation, props }) => {
           for (let j = 0; j < numItems; j++) {
             let RandomNumber = Math.floor(Math.random() * 10000) + 1;
             items[strTime].push({
-              // name: "Item for " + strTime + " #" + j,
               name: "הוצאה נדחתה",
               sum: "₪" + RandomNumber,
               height: Math.max(50, Math.floor(Math.random() * 150)),
@@ -97,26 +77,6 @@ const ExpenditureDeferred = ({ navigation, props }) => {
   };
   return (
     <View style={{ flex: 1 }}>
-      {/* <View
-        style={{
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <View
-          style={{
-            position: "absolute",
-            margin: "auto",
-            width: 100,
-            height: 100,
-          }}
-        />
-        <Chip
-          title={currentMonth}
-          type="outline"
-          containerStyle={{ marginVertical: 15 }}
-        />
-      </View> */}
       <Agenda
         renderEmptyData={() => null}
         theme={{
@@ -149,9 +109,7 @@ const ExpenditureDeferred = ({ navigation, props }) => {
             },
           },
         }}
-        // onDayChange={(day) => {
-        //   setMonth(day.month);
-        // }}
+       
         items={items}
         loadItemsForMonth={loadItems}
         selected={"2022-05-16"}

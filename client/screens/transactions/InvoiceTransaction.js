@@ -92,7 +92,6 @@ const InvoiceTransaction = ({ route, navigation }) => {
               {data.description}
             </Chip>
             <TouchableOpacity
-              // onPress={() => navigation.navigate('אפשרויות')}
               onPress={deleteAlert}
               style={{
                 alignSelf: 'center',
@@ -101,9 +100,7 @@ const InvoiceTransaction = ({ route, navigation }) => {
               <Icon name="delete-outline" size={24} color="black" />
             </TouchableOpacity>
           </View>
-          {/* <Header style={{ color: 'black', fontSize: 18 }}>{data.category}</Header> */}
           <Header style={{ textAlign: 'center', color: 'black' }}>
-            {/* 24 יולי, 2022 */}
             {timeToString(data.date)}
           </Header>
           <Text style={{ opacity: 0.2 }} ellipsizeMode="clip" numberOfLines={1}>

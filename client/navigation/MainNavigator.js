@@ -21,7 +21,6 @@ const MainNavigator = () => {
             options={{
               headerShown: false,
               presentation: 'modal',
-              // ...TransitionPresets.ModalPresentationIOS,
             }}
           />
           <Stack.Screen
@@ -31,7 +30,6 @@ const MainNavigator = () => {
               headerShown: false,
               presentation: 'modal',
 
-              // ...TransitionPresets.ModalPresentationIOS,
             }}
           />
         </Stack.Navigator>

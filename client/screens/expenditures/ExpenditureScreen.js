@@ -55,12 +55,10 @@ const ExpenditureScreen = ({ navigation }) => {
       VatType: selectedCategory['id'],
       name: title,
       category: selectedCategory['title'],
-      // expenseItems: JSON.stringify([{ key: 'value' }]),
       expenseImg: uploadedImage == null ? null : uploadedImage,
       expenseSum: sum,
       currency: currency,
     };
-    //console.log(data);
     ExpenseDataService.create(data)
       .then((response) => {
         RootNavigation.navigate('תנועות');
@@ -136,9 +134,7 @@ const ExpenditureScreen = ({ navigation }) => {
           />
           {image && selectedCategory && (
             <Text style={styles.title}>{selectedCategory['title']}</Text>
-            // <Text style={{ color: '#668', fontSize: 13 }}>
-            //   Selected item: {selectedCategory['title']}
-            // </Text>
+      
           )}
           {!image && (
               <Text style={{ opacity: 0.2 }} ellipsizeMode="clip" numberOfLines={1}>
@@ -206,7 +202,7 @@ const ExpenditureScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   bottomContainer: {
-    // marginTop: 'auto',
+
     flexDirection: 'row',
     padding: 5,
   },

@@ -80,5 +80,4 @@ incomeRouter.delete(
   "/:startDate&endDate",
   IncomeController.deleteIncomesByDate
 );
-//incomeRouter.get("/total", [authJwt.verifyToken], IncomeController.getIncomes);
 module.exports = incomeRouter;

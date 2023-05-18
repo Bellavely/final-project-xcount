@@ -33,7 +33,6 @@ const VAT_Screen = ({route}) => {
 
 
   useEffect(() => {
-   // console.log('loading Data');
     loadData1();
     loadData2();
   }, [route]);

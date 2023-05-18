@@ -37,8 +37,6 @@ db.customer = require("./customer.model.js")(sequelize, Sequelize);
 db.expense = require("./expense.model.js")(sequelize, Sequelize);
 db.income = require("./income.model.js")(sequelize, Sequelize);
 db.expenseType = require("./expenseType.model.js")(sequelize, Sequelize);
-//db.receipt = require("./receipt.model.js")(sequelize, Sequelize);
-//db.business = require("./business.model.js")(sequelize, Sequelize);
 
 db.role.belongsToMany(db.user, {
   through: "user_roles",
@@ -58,17 +56,7 @@ db.user.hasOne(db.refreshToken, {
   foreignKey: "userId",
   targetKey: "userId",
 });
-//db.income.belongsTo(db.receipt);
-/*db.item.belongsToMany(db.receipt, {
-  through: "receipt_items",
-  foreignKey: "itemId",
-  otherKey: "receiptId",
-});*/
-// db.income.hasOne(db.business);
-// db.income.hasOne(db.receipt);
-// db.income.hasOne(db.customer);
-//db.receipt.hasMany(db.item);
-//db.item.belongsToMany(db.receipt);
+
 
 const initial = async () => {
   let dataSet = [

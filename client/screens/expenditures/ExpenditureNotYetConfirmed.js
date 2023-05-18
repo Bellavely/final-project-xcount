@@ -12,26 +12,7 @@ const timeToString = (time) => {
 };
 const ExpenditureNotYetConfirmed = ({ navigation, props }) => {
   const [items, setItems] = useState({});
-  // const [currentMonth, setCurrentMonth] = useState("");
-
-  // const setMonth = (date) => {
-  //   const month = date - 1;
-  //   const monthNames = [
-  //     "January",
-  //     "February",
-  //     "March",
-  //     "April",
-  //     "May",
-  //     "June",
-  //     "July",
-  //     "August",
-  //     "September",
-  //     "October",
-  //     "November",
-  //     "December",
-  //   ];
-  //   setCurrentMonth(monthNames[month]);
-  // };
+ 
   const loadItems = (day) => {
     setTimeout(() => {
       for (let i = -15; i < 12; i++) {
@@ -133,9 +114,7 @@ const ExpenditureNotYetConfirmed = ({ navigation, props }) => {
             },
           },
         }}
-        // onDayChange={(day) => {
-        //   setMonth(day.month);
-        // }}
+      
         items={items}
         loadItemsForMonth={loadItems}
         selected={"2022-05-16"}

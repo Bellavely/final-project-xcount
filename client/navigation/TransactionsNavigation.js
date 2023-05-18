@@ -26,10 +26,9 @@ const TransactionsNavigation = ({ navigation, route }) => {
         name="פרטי הוצאה"
         component={Transaction}
         options={{
-          // title: 'הוצאה',
+          title: 'הוצאה',
           headerShown: true,
           presentation: 'modal',
-          // ...TransitionPresets.ModalPresentationIOS,
         }}
       />
       <Stack.Screen
@@ -47,12 +46,7 @@ const TransactionsNavigation = ({ navigation, route }) => {
           title: 'תנועות',
           headerShown: true,
           headerTitleAlign: 'center',
-          // headerLeft: () => (
-          //   <TouchableOpacity onPress={() => navigation.goBack()}>
-          //     <Ionicons name="close-sharp" size={28} color="black" />
-          //   </TouchableOpacity>
-          // ),
-          // entation: 'modal',
+   
         })}
       />
     </Stack.Navigator>
@@ -64,11 +58,7 @@ const styles = StyleSheet.create({
   tabBar: {
     position: 'absolute',
     padding: 0,
-    // left: 16,
-    // right: 16,
-    // bottom: 32,
     height: 56,
-    // borderRadius: 16,
     backgroundColor: COLORS.white,
     borderTopColor: 'transparent',
     shadowColor: COLORS.dark,
@@ -78,6 +68,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.1,
     shadowRadius: 3,
-    // elevation: 3,
+  
   },
 });

@@ -130,7 +130,6 @@ const styles = StyleSheet.create({
     shadowOffset: { width: -1, height: -3 },
     shadowRadius: 2,
     shadowOpacity: 0.4,
-    // elevation: 5,
     paddingTop: 20,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
@@ -168,7 +167,6 @@ const styles = StyleSheet.create({
     color: 'black',
   },
   bottomContainer: {
-    // marginTop: 'auto',
     flexDirection: 'row',
     padding: 5,
   },

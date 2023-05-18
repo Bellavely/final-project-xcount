@@ -7,7 +7,6 @@ indexRouter.get("/", receiptController.createReceipt);
 
 indexRouter.post("/uploadImage", upload.single("image"), async (req, res) => {
   try {
-    // console.log(req.file); // File which is uploaded.
     res.send({ path: req.file.filename });
   } catch (error) {
     res.status(500).send("Error");

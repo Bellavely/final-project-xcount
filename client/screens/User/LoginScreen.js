@@ -13,7 +13,6 @@ import { AuthContext } from '../../context/AuthContext';
 
 export default function LoginScreen({ navigation }) {
   const { signIn } = React.useContext(AuthContext);
-  // const [email, setEmail] = useState({ value: "", error: "" });
   const [username, setUsername] = useState({ value: '', error: '' });
   const [password, setPassword] = useState({ value: '', error: '' });
   const onLoginPressed = () => {

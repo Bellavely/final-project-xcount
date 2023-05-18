@@ -47,7 +47,6 @@ const TabScene = ({
             let RandomNumber = Math.floor(Math.random() * 10000) + 1;
             let expOrIncome = Math.floor(Math.random() * 2);
             items[strTime].push({
-              // name: "Item for " + strTime + " #" + j,
               name: expOrIncome === 0 ? 'הכנסה' : 'הוצאה',
               sum: '₪' + RandomNumber,
               state: expOrIncome,
@@ -123,61 +122,7 @@ const TabScene = ({
         showsVerticalScrollIndicator={false}
         keyExtractor={(item, index) => index.toString()}
       />
-    // <Agenda
-    //   scrollToOverflowEnabled={true}
-    //   ref={onGetRef}
-    //   scrollEventThrottle={16}
-    //   onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], {
-    //     useNativeDriver: true,
-    //   })}
-    //   onMomentumScrollBegin={onMomentumScrollBegin}
-    //   onScrollEndDrag={onScrollEndDrag}
-    //   onMomentumScrollEnd={onMomentumScrollEnd}
-    //   ItemSeparatorComponent={() => <View style={{ height: 10 }} />}
-    //   ListHeaderComponent={() => <View style={{ height: 10 }} />}
-    //   contentContainerStyle={{
-    //     paddingTop: HeaderHeight + TabBarHeight,
-    //     paddingHorizontal: 10,
-    //     minHeight: windowHeight - TabBarHeight,
-    //   }}
-    //   showsHorizontalScrollIndicator={false}
-    //   showsVerticalScrollIndicator={false}
-    //   renderEmptyData={() => null}
-    //   theme={{
-    //     agendaDayMonthColor: 'black',
-    //     'stylesheet.agenda.main': {
-    //       header: {
-    //         height: 0,
-    //         width: 0,
-    //       },
-    //       knobContainer: {
-    //         height: 0,
-    //         width: 0,
-    //       },
-    //       knob: {
-    //         height: 0,
-    //         width: 0,
-    //       },
-    //       weekdays: {
-    //         height: 0,
-    //         width: 0,
-    //       },
-    //       weekday: {
-    //         height: 0,
-    //         width: 0,
-    //       },
-    //       reservations: {
-    //         flex: 1,
-    //         marginTop: 10,
-    //         backgroundColor: '#F1F1F1',
-    //       },
-    //     },
-    //   }}
-    //   items={items}
-    //   loadItemsForMonth={loadItems}
-    //   selected={'2022-05-16'}
-    //   renderItem={renderItem}
-    // />
+ 
   );
 };
 

@@ -58,9 +58,7 @@ describe("expenseController", () => {
       };
       expenseController.sum({}, res);
     });
-    // afterEach(() => {
-    //   expenseModelMock.$queryInterface.$clearHandlers();
-    // });
+  
   });
 
   describe("Test getAllExpenses", () => {

@@ -134,30 +134,4 @@ const styles = StyleSheet.create({
 
 export default InvoicePayment;
 
-// <NavigationContainer independent={true}>
-// <View style={{ backgroundColor: '#CCCCFF', flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 20 }}>
-//   <Text style={{textAlign: 'left', lineHeight: 40, fontSize: 20}} >
-//     יתרה לתשלום
-//   </Text>
-//   <Text style={{textAlign: 'left', lineHeight: 40, fontSize: 20}} >
-//     {route.params.sumPrice}
-//   </Text>
 
-// </View>
-
-// <Tab.Navigator
-//   screenOptions={{
-//     tabBarScrollEnabled: true,
-//     tabBarLabelStyle: { fontSize: 14 },
-//     tabBarItemStyle: { width: 100 },
-//     // tabBarStyle: { backgroundColor: "powderblue" },
-//   }}
-// >
-//   <Tab.Screen name="העברה בנקאית" component={InvoicePaymentBank} initialParams={route.params} />
-//   <Tab.Screen name="כ.אשראי" component={SettingsScreen} />
-//   <Tab.Screen name="שיק" component={SettingsScreen} />
-//   <Tab.Screen name="אפליקציית תשלום" component={SettingsScreen} />
-//   <Tab.Screen name="אחר" component={SettingsScreen} />
-// </Tab.Navigator>
-
-// </NavigationContainer>

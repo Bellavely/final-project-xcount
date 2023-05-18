@@ -14,42 +14,7 @@ const InvoiceItem = ({ navigation, route }) => {
 
   return (
     <View style={styles.container}>
-      {/* <RNPickerSelect
-        placeholder={{}}
-        items={[
-          {
-            label: 'מחיר לא כולל מע"מ',
-            value: "vatNotInculeded",
-          },
-          {
-            label: 'מחיר כולל מע"מ',
-            value: "vatInculeded",
-          },
-        ]}
-        onValueChange={(value) => {
-          setSelectedVat(value);
-        }}
-        style={{
-          ...styles,
-          iconContainer: {
-            top: 10,
-            right: 12,
-            margin: 20,
-          },
-        }}
-        value={selectedVat}
-        useNativeAndroidPickerStyle={false}
-        textInputProps={{ underlineColor: "yellow" }}
-        Icon={() => {
-          return (
-            <MaterialCommunityIcons
-              name="arrow-up-down"
-              size={24}
-              color="black"
-            />
-          );
-        }}
-      /> */}
+
       <View style={{ flex: 1, padding: 20 }}>
         <View style={{ flexDirection: 'row' }}>
           <View style={{ flex: 3 }}>
@@ -57,7 +22,6 @@ const InvoiceItem = ({ navigation, route }) => {
               textAlign="right"
               textAlignVertical="center"
               disabledInputStyle={{ background: '#ddd' }}
-              // rightIcon={<Icon name="account-plus" size={20} />}
               placeholder="תיאור פריט"
               onChangeText={(e) => setName(e)}
             />
@@ -67,7 +31,6 @@ const InvoiceItem = ({ navigation, route }) => {
               textAlign="right"
               textAlignVertical="center"
               disabledInputStyle={{ background: '#ddd' }}
-              // rightIcon={<Icon name="account-plus" size={20} />}
               placeholder="כמות"
               keyboardType="numeric"
               onChangeText={(e) => setIntity(e)}

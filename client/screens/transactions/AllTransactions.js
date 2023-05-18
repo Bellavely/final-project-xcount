@@ -26,7 +26,6 @@ const AllTransactions = () => {
             let RandomNumber = Math.floor(Math.random() * 10000) + 1;
             let expOrIncome = Math.floor(Math.random() * 2);
             items[strTime].push({
-              // name: "Item for " + strTime + " #" + j,
               name: expOrIncome === 0 ? 'הכנסה' : 'הוצאה',
               sum: '₪' + RandomNumber,
               state: expOrIncome,

@@ -30,14 +30,7 @@ module.exports = (sequelize, Sequelize) => {
       incomeSum: {
         type: Sequelize.FLOAT,
       },
-      // currency: {
-      //   type: Sequelize.ENUM("shekel", "dollar", "euro"),
-      //   defaultValue: "shekel",
-      // },
-      // currencyExchangeRate: {
-      //   type: Sequelize.FLOAT,
-      //   defaultValue: 0.0,
-      // },
+
       paymentMethods: {
         type: Sequelize.STRING,
         allowNull: true,

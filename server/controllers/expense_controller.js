@@ -165,7 +165,6 @@ exports.getImageById = (req, res) => {
   const id = req.params.id;
   expenses
     .findOne({
-      // attributes: ["expenseImg"],
       where: { id: id },
     })
     .then((data) => {

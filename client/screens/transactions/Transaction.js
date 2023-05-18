@@ -107,7 +107,6 @@ const Transaction = ({ route, navigation }) => {
               {data.name}
             </Chip>
             <TouchableOpacity
-              // onPress={() => navigation.navigate('אפשרויות')}
               onPress={deleteAlert}
               style={{
                 alignSelf: 'center',

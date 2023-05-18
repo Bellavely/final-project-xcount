@@ -19,7 +19,6 @@ const TabbedTransactions = ({ navigation, props }) => {
         screenOptions={{
           tabBarScrollEnabled: false,
           tabBarLabelStyle: { fontSize: 14 },
-        //   tabBarStyle: { backgroundColor: 'powderblue' },
         }}
       >
         <Tab.Screen name="הכנסות" component={All_Incomes} />

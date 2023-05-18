@@ -199,7 +199,6 @@ const [invoiceSum,SetInvoiceSum]=useState(0);
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    // justifyContent: "center",
     height: 25,
     borderRadius: 4,
     marginTop: 14,

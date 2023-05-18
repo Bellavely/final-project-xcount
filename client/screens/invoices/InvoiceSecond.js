@@ -385,15 +385,7 @@ const InvoiceSecond = ({ navigation, route }) => {
               console.log(error);
               console.log('**************************************');
             }
-            // navigation.reset({
-            //   index: 0,
-            //   routes: [
-            //     {
-            //       name: 'חשבונית מס/קבלה',
-            //       params: { someParam: 'Param1' },
-            //     },
-            //   ],
-            // })
+    
             navigation.navigate('הפקת חשבונית מס/קבלה', {
               sumPrice: sumPrice,
               sumPriceWithVAT: sumPriceWithVAT,

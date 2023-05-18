@@ -58,9 +58,7 @@ describe("incomeController", () => {
       };
       incomeController.getIncomesSum({}, res);
     });
-    // afterEach(() => {
-    //   incomeModelMock.$queryInterface.$clearHandlers();
-    // });
+  
   });
 
   describe("Test getAllIncomes", () => {
